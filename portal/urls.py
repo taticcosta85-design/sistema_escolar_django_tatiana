@@ -7,6 +7,9 @@ from portal import views
 app_name = 'portal'
 
 
+#ERRO ENCONTRADO: Rota principal do aplicativo não foi definida corretamente. A rota principal deve ser definida como uma string vazia ('') para que o Django possa identificar corretamente a URL raiz do aplicativo.
+
+# CORREÇÃO: Alterado a rota principal do aplicativo para uma string vazia ('') para que o Django possa identificar corretamente a URL raiz do aplicativo.
 urlpatterns = [
     path('', views.index, name='index'),
     path('cadastro/', views.cadastro, name='cadastro'),
